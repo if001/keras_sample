@@ -1,5 +1,5 @@
 class Predict():
     @classmethod
-    def run(cls, model, x_test, y_test):
-        score = model.evaluate(x_test, y_test, verbose=0)
+    def run(cls, model, x_test):
+        score = model.predict(x_test)
         return score

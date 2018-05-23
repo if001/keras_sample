@@ -12,8 +12,8 @@ def main():
     hist = Learning.run(mnist_model, train_x, train_y, cbs)
     Mnist.save_model(mnist_model)
 
-    test_x, test_y = PreProcessing().make_test_data()
-    score = Predict.run(mnist_model, test_x, test_y)
+    # test_x, test_y = PreProcessing().make_test_data()
+    # score = Predict.run(mnist_model, test_x, test_y)
 
     print('Test loss:', score[0])
     print('Test accuracy:', score[1])
